@@ -1,0 +1,73 @@
+# .aider.conf.yml — Aider configuration for this project
+  # Docs: https://aider.chat/docs/config/aider_conf.html
+
+  ##########
+  # Model  #
+  ##########
+  model: anthropic/claude-opus-4-7
+  weak-model: anthropic/claude-haiku-4-5-20251001
+  editor-model: anthropic/claude-sonnet-4-6
+
+  # Alternative providers (uncomment to use)
+  # model: openai/gpt-4o
+  # model: gemini/gemini-2.0-pro
+
+  ############
+  # API keys #
+  ############
+  # Prefer environment variables over committing keys:
+  #   export ANTHROPIC_API_KEY=sk...
+  #   export OPENAI_API_KEY=sk...
+  # Or use a separate, gitignored .env file.
+
+  ###############
+  # Git / repo  #
+  ###############
+  auto-commits: true
+  dirty-commits: true
+  attribute-author: true
+  attribute-committer: true
+  gitignore: true
+
+  ##############
+  # Behavior   #
+  ##############
+  auto-test: false
+  test-cmd: pnpm test
+  lint-cmd:
+    - "typescript: pnpm tsc --noEmit"
+    - "javascript: pnpm eslint"
+
+  stream: true
+  pretty: true
+  dark-mode: true
+  show-model-warnings: true
+
+  #############
+  # Context   #
+  #############
+  read:
+    - README.md
+    - CLAUDE.md
+
+  # Files always added to chat
+  # file:
+  #   - src/main.ts
+
+  ###############
+  # Conventions #
+  ###############
+  # A markdown file with project-specific coding rules Aider will follow.
+  # read:
+  #   - CONVENTIONS.md
+
+  ##########
+  # Cache  #
+  ##########
+  cache-prompts: true
+  cache-keepalive-pings: 0
+
+  ##########
+  # Voice  #
+  ##########
+  # voice-language: en
