@@ -110,7 +110,7 @@ COGNITIVE-ASSET-ZERO/
 
 - Debian-based Linux (tested on Debian 12 VPS)
 - Python 3.10+
-- [Aider](https://aider.chat) — `pip install aider-chat`
+- [Aider](https://aider.chat) - `pip install aider-chat`
 - [OpenRouter](https://openrouter.ai) API key (or any model provider Aider supports)
 - *(Optional)* [Claude Code](https://claude.com/claude-code) for the integrated memory bridge
 
@@ -146,4 +146,4 @@ MIT
 
 ---
 
-*Cognitive-Asset-Zero — your project's brain, independent of any single LLM vendor.*
+*Cognitive-Asset-Zero - your project's brain, independent of any single LLM vendor.*
